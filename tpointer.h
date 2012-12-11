@@ -1,7 +1,7 @@
 #ifndef __TPOINTER_H__
 #define __TPOINTER_H__
 #include "error.h"
-/*добавить отладочный код*/
+/*п╢п╬п╠п╟п╡п╦я┌я▄ п╬я┌п╩п╟п╢п╬я┤п╫я▀п╧ п╨п╬п╢*/
 namespace cfe{
 	template <class Type>
 	class tpointer {
@@ -38,7 +38,7 @@ namespace cfe{
 				free_pointer();
 				copy_pointer();
 			}
-			/*что делать если o == 0?*/
+			/*я┤я┌п╬ п╢п╣п╩п╟я┌я▄ п╣я│п╩п╦ o == 0?*/
 			Type * operator->(){ return o->obj; }
 			tpointer<Type>& clone() { return tpointer<Type>(*o); }
 	};

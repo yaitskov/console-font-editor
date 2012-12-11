@@ -33,7 +33,7 @@ namespace cfe{
 					const Size& size,
 					short _foreground, 
 					short _background,
-					char stuff);//символ заполнитель
+					char stuff);//я│п╦п╪п╡п╬п╩ п╥п╟п©п╬п╩п╫п╦я┌п╣п╩я▄
 			virtual void paint();
 			virtual int setX();
 			virtual int setY();

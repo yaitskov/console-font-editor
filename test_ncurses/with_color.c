@@ -9,25 +9,25 @@ void end(){
 int main(){
 	initscr();
 	start_color();
-	addstr("Цветной терминал: ");
+	addstr("п╕п╡п╣я┌п╫п╬п╧ я┌п╣я─п╪п╦п╫п╟п╩: ");
 	if(has_colors()){
-		addstr("Да\n");
+		addstr("п■п╟\n");
 	}else{
-		addstr("Нет\n");
+		addstr("п²п╣я┌\n");
 		end();
 	}
-	printw("Количество поддерживаемых\nцветов: %d\nпар цветов: %d\n", 
+	printw("п п╬п╩п╦я┤п╣я│я┌п╡п╬ п©п╬п╢п╢п╣я─п╤п╦п╡п╟п╣п╪я▀я┘\nя├п╡п╣я┌п╬п╡: %d\nп©п╟я─ я├п╡п╣я┌п╬п╡: %d\n", 
 			       COLORS,COLOR_PAIRS);
 	refresh();
 	if(init_color(8, 500,500,500)){
 		endwin();
-		printf("Ошибка init_color\n");
+		printf("п·я┬п╦п╠п╨п╟ init_color\n");
 		exit(0);
 	}
 	init_pair(1,COLOR_RED, COLOR_GREEN);
 	attron(COLOR_PAIR(1));
-	printw("Определение новых цветов: %s\n", 
-			can_change_color() == TRUE ? "Да":"Нет");
+	printw("п·п©я─п╣п╢п╣п╩п╣п╫п╦п╣ п╫п╬п╡я▀я┘ я├п╡п╣я┌п╬п╡: %s\n", 
+			can_change_color() == TRUE ? "п■п╟":"п²п╣я┌");
 	getch();
 	endwin();
 	return 0;

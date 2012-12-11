@@ -5,23 +5,23 @@
 #include"mathplus.h"
 using std::string;
 using std::type_info;
-/*информационные макросы при расширении превращаются в объекты std::string*/
-/*конвертирует аргумент в объект std::string*/
+/*п╦п╫я└п╬я─п╪п╟я├п╦п╬п╫п╫я▀п╣ п╪п╟п╨я─п╬я│я▀ п©я─п╦ я─п╟я│я┬п╦я─п╣п╫п╦п╦ п©я─п╣п╡я─п╟я┴п╟я▌я┌я│я▐ п╡ п╬п╠я┼п╣п╨я┌я▀ std::string*/
+/*п╨п╬п╫п╡п╣я─я┌п╦я─я┐п╣я┌ п╟я─пЁя┐п╪п╣п╫я┌ п╡ п╬п╠я┼п╣п╨я┌ std::string*/
 #define TOSTRING(A) (string(""##A))
-/*описание не статического метода*/
+/*п╬п©п╦я│п╟п╫п╦п╣ п╫п╣ я│я┌п╟я┌п╦я┤п╣я│п╨п╬пЁп╬ п╪п╣я┌п╬п╢п╟*/
 #define DESK_MT (string("Method description:\nFile:  ") \
 		+ string(__FILE__) \
 		+ string("\nType:  ") + string(typeid(this).name()) \
 		+ string("\nMethod:") + string(__func__) \
 		+ string("\nLine:  ") + string(math_plus::itoa(__LINE__)) \
 		+ string("\n"))
-/*описание функции*/
+/*п╬п©п╦я│п╟п╫п╦п╣ я└я┐п╫п╨я├п╦п╦*/
 #define DESK_FN (string("Function description:\nFile:    ") \
 		+ string(__FILE__) \
 		+ string("\nFunction:") + string(__func__) \
 		+ string("\nLine:    ") + string(math_plus::itoa(__LINE__)) \
 		+ string("\n"))
-/*описание статического метода*/
+/*п╬п©п╦я│п╟п╫п╦п╣ я│я┌п╟я┌п╦я┤п╣я│п╨п╬пЁп╬ п╪п╣я┌п╬п╢п╟*/
 #define DESK_SMT(CLASS)(string("Static method description:\nFile:  ") \
 		+ string(__FILE__) \
 		+ string("\nType:  ") + string( ##CLASS) \
